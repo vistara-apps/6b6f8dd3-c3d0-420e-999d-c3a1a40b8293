@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-gray-200;
+  }
+  
+  body {
+    @apply bg-gradient-to-br from-purple-600 via-blue-600 to-indigo-700 text-white min-h-screen;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-white bg-opacity-10 backdrop-blur-lg border border-white border-opacity-20 rounded-xl shadow-card;
+  }
+  
+  .btn-primary {
+    @apply bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-3 rounded-lg font-medium hover:from-purple-600 hover:to-pink-600 transition-all duration-200 shadow-lg hover:shadow-xl;
+  }
+  
+  .btn-secondary {
+    @apply bg-white bg-opacity-20 text-white px-6 py-3 rounded-lg font-medium hover:bg-opacity-30 transition-all duration-200 backdrop-blur-sm border border-white border-opacity-30;
+  }
+  
+  .metric-card {
+    @apply glass-card p-4 hover:bg-opacity-15 transition-all duration-200;
+  }
+  
+  .sidebar-item {
+    @apply flex items-center gap-3 px-4 py-3 rounded-lg text-white text-opacity-80 hover:text-opacity-100 hover:bg-white hover:bg-opacity-10 transition-all duration-200 cursor-pointer;
+  }
+  
+  .sidebar-item.active {
+    @apply bg-white bg-opacity-20 text-white;
+  }
+  
+  .record-button {
+    @apply w-16 h-16 rounded-full bg-red-500 hover:bg-red-600 transition-all duration-200 flex items-center justify-center shadow-lg hover:shadow-xl;
+  }
+  
+  .record-button.recording {
+    @apply animate-pulse bg-red-600;
+  }
+  
+  .alert-button {
+    @apply w-12 h-12 rounded-full bg-orange-500 hover:bg-orange-600 transition-all duration-200 flex items-center justify-center shadow-lg hover:shadow-xl;
+  }
+}
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+}
