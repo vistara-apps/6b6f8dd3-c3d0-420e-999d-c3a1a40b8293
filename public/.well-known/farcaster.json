@@ -1,0 +1,30 @@
+{
+  "accountAssociation": {
+    "header": "",
+    "payload": "",
+    "signature": ""
+  },
+  "frame": {
+    "version": "1",
+    "name": "RightsGuard AI",
+    "subtitle": "Built with Zara",
+    "description": "RightsGuard AI is a Base Mini App built with Zara.",
+    "iconUrl": "https://0co.to/images/zara-2.png",
+    "homeUrl": "https://6b6f8dd3c3d0420e999dc3a1a40b8293-oe4f.vercel.app",
+    "splashImageUrl": "https://6b6f8dd3c3d0420e999dc3a1a40b8293-oe4f.vercel.app/splash.png",
+    "splashBackgroundColor": "#000000",
+    "heroImageUrl": "https://6b6f8dd3c3d0420e999dc3a1a40b8293-oe4f.vercel.app/image.png",
+    "tagline": "RightsGuard AI",
+    "screenshotUrls": [
+      "https://6b6f8dd3c3d0420e999dc3a1a40b8293-oe4f.vercel.app/screenshot.png",
+      "https://6b6f8dd3c3d0420e999dc3a1a40b8293-oe4f.vercel.app/screenshot.png"
+    ],
+    "primaryCategory": "social",
+    "tags": [
+      "base",
+      "miniapp",
+      "onchainkit"
+    ],
+    "webhookUrl": "https://6b6f8dd3c3d0420e999dc3a1a40b8293-oe4f.vercel.app/api/webhook"
+  }
+}
